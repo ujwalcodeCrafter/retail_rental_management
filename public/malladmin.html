@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mall Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <h2>Mall Admin Dashboard</h2>
+        <button onclick="logout()">Logout</button>
+        <h3>All Shops</h3>
+        <div id="shopsList"></div>
+        <h3>Add New Shop</h3>
+        <div id="addShopForm">
+            <input type="text" id="shopName" placeholder="Shop Name">
+            <input type="text" id="location" placeholder="Location">
+            <input type="number" id="sizeSqft" placeholder="Size (sqft)">
+            <input type="number" id="rentalRate" placeholder="Rental Rate ($)">
+            <input type="email" id="ownerEmail" placeholder="Owner Email">
+            <input type="password" id="ownerPassword" placeholder="Owner Password">
+            <input type="email" id="staffEmail" placeholder="Staff Email">
+            <input type="password" id="staffPassword" placeholder="Staff Password">
+            <button onclick="addShop()">Add Shop</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>loadShops();</script>
+</body>
+</html>

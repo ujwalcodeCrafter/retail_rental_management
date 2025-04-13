@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <h2>Staff Dashboard</h2>
+        <button onclick="logout()">Logout</button>
+        <h3>Recent Footfall Records</h3>
+        <div id="footfallRecords"></div>
+        <h3>Add Footfall Record</h3>
+        <div id="addFootfallForm">
+            <input type="date" id="recordDate" placeholder="Record Date">
+            <input type="number" id="visitorCount" placeholder="Visitor Count">
+            <button onclick="addFootfall()">Add Footfall</button>
+        </div>
+        <h3>Recent Sales</h3>
+        <div id="salesRecords"></div>
+        <h3>Add Sale</h3>
+        <div id="addSaleForm">
+            <input type="number" id="productId" placeholder="Product ID">
+            <input type="date" id="saleDate" placeholder="Sale Date">
+            <input type="number" id="quantitySold" placeholder="Quantity Sold">
+            <input type="number" id="totalAmount" placeholder="Total Amount ($)">
+            <button onclick="addSale()">Add Sale</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>loadFootfall(); loadSales();</script>
+</body>
+</html>

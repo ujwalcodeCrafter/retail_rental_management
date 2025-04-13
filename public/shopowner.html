@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop Owner Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <h2>Shop Owner Dashboard</h2>
+        <button onclick="logout()">Logout</button>
+        <h3>My Shop Details</h3>
+        <div id="shopDetails"></div>
+        <h3>My Products</h3>
+        <div id="productsList"></div>
+        <h3>Add New Product</h3>
+        <div id="addProductForm">
+            <input type="text" id="productName" placeholder="Product Name">
+            <input type="text" id="category" placeholder="Category">
+            <input type="number" id="price" placeholder="Price ($)">
+            <input type="number" id="stockQuantity" placeholder="Stock Quantity">
+            <button onclick="addProduct()">Add Product</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>loadShopDetails(); loadProducts();</script>
+</body>
+</html>
